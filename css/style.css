@@ -1,0 +1,51 @@
+body {
+
+    background-color:bisque;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 24px;
+    line-height: 2.0;
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+font-family: cursive;
+background-color: antiquewhite;
+
+
+font-weight: 60;
+font-size: 55;
+margin: 50;
+padding: 0;
+text-align: center;
+}
+
+h2{
+
+font-family: cursive;
+text-align: center;
+
+}
+
+
+
+}
+p  {
+    font-family: cursive;
+    font-size: 30px;
+    
+
+
+
+}
+
+image {
+    size: 16px;
+}
+
+li {
+    font-family: cursive;
+    font-size: 20
+}
