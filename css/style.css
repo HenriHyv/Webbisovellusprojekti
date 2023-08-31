@@ -1,6 +1,6 @@
 body {
 
-    background-color:bisque;
+    background-color: ;
     font-family:'Times New Roman', Times, serif;
     font-size: 24px;
     line-height: 2.0;
@@ -29,10 +29,19 @@ text-align: center;
 
 }
 
+p {
+
+font-size: 20px;
+font-family: cursive;
+text-align: center;;
 
 
 }
-p  {
+
+
+
+
+p2  {
     font-family: cursive;
     font-size: 30px;
     
@@ -48,4 +57,26 @@ image {
 li {
     font-family: cursive;
     font-size: 20
+}
+
+
+p a {
+    font-size: 25px; /* Adjust the desired font size */
+    text-decoration: none; /* Remove underline from links */
+    color: black; 
+    background-color: white;/* Set the link color */
+}
+
+p b {
+
+    text-align: center;
+    font-size: 24
+}
+
+img {
+
+    max-width:30%;
+    height: auto;
+    border-radius: 50%;
+    
 }
