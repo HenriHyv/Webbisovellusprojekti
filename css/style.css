@@ -1,6 +1,7 @@
 body {
+    
 
-    background-color: ;
+    
     font-family:'Times New Roman', Times, serif;
     font-size: 24px;
     line-height: 2.0;
@@ -21,6 +22,16 @@ margin: 50;
 padding: 0;
 text-align: center;
 }
+
+img {
+
+    max-width:35%;
+    
+    border-radius: 50%;
+    
+    
+}
+
 
 h2{
 
@@ -61,10 +72,12 @@ li {
 
 
 p a {
-    font-size: 25px; /* Adjust the desired font size */
-    text-decoration: none; /* Remove underline from links */
+    font-size: 25px;
+    text-align: left;
+     /* Adjust the desired font size */
+    /* Remove underline from links */
     color: black; 
-    background-color: white;/* Set the link color */
+    background-color: beige;/* Set the link color */
 }
 
 p b {
@@ -73,10 +86,3 @@ p b {
     font-size: 24
 }
 
-img {
-
-    max-width:30%;
-    height: auto;
-    border-radius: 50%;
-    
-}
