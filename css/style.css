@@ -71,18 +71,22 @@ li {
 }
 
 
+p {
+    display: inline;
+    margin-right: 20px; /* Add some spacing between links if needed */
+}
+
+/* To remove underlines from links */
 p a {
-    font-size: 25px;
-    text-align: left;
-     /* Adjust the desired font size */
-    /* Remove underline from links */
-    color: black; 
-    background-color: beige;/* Set the link color */
+    color: black;
+    text-decoration: none;
+    background-color: beige;
 }
 
 p b {
 
     text-align: center;
     font-size: 24
+    
 }
 
