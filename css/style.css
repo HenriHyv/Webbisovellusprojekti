@@ -8,23 +8,26 @@ body {
     overflow-x: hidden;
 }
 
+.header-container, .nav-container, .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
 h1 {
     font-family: cursive;
     background-color: antiquewhite;
-    font-weight: 400; /* Adjust the font-weight value as needed */
-    font-size: 55px; /* Add units (e.g., px) */
-    margin: 50px; /* Add units (e.g., px) */
+    font-weight: 400;
+    font-size: 55px;
+    margin: 50px 0;
     padding: 0;
-    text-align: center;
 }
 
 img {
-    max-width: 35%;
+    max-width: 15%;
     border-radius: 50%;
-}
-
-#about-p {
-    display: none;
 }
 
 h2 {
@@ -36,28 +39,21 @@ p {
     font-size: 20px;
     font-family: cursive;
     text-align: center;
+    margin: 0 40px;
 }
 
-/* Add styles for specific elements like p2 or image here */
-
-li {
-    font-family: cursive;
-    font-size: 20px; /* Add units (e.g., px) */
-}
-
-p {
-    display: inline;
-    margin-right: 20px; /* Add some spacing between links if needed */
-}
-
-/* To remove underlines from links */
 p a {
     color: black;
     text-decoration: none;
     background-color: beige;
 }
 
-p b {
-    text-align: center;
-    font-size: 24px; /* Add units (e.g., px) */
+a.phone-link, a.email-link {
+    color: blue;
+    text-decoration: none;
+}
+
+a.phone-link:hover, a.email-link:hover {
+    color: red;
+    text-decoration: underline;
 }

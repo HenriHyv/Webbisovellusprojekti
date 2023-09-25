@@ -1,13 +1,27 @@
-// script.js
 document.addEventListener("DOMContentLoaded", function() {
-    var aboutHeader = document.getElementById("about");
-    var aboutParagraph = document.getElementById("about-p");
-
-    aboutHeader.addEventListener("click", function() {
-        if (aboutParagraph.style.display === "none" || aboutParagraph.style.display === "") {
-            aboutParagraph.style.display = "block";
-        } else {
-            aboutParagraph.style.display = "none";
+    // Function to toggle visibility based on ID
+    function toggleSectionVisibility(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
         }
+    }
+
+    // Add click event listeners for each section
+    document.getElementById("about").addEventListener("click", function() {
+        toggleSectionVisibility("about-p");
+    });
+
+    document.getElementById("portfolio").addEventListener("click", function() {
+        toggleSectionVisibility("portfolio-p");
+    });
+
+    document.getElementById("contact").addEventListener("click", function() {
+        toggleSectionVisibility("contact-container");
     });
 });
+
