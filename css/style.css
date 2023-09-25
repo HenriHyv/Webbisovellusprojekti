@@ -8,12 +8,22 @@ body {
     overflow-x: hidden;
 }
 
-.header-container, .nav-container, .contact-container {
+.header-container, .contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-top: 20px;
+}
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    
+
 }
 
 h1 {
@@ -40,6 +50,7 @@ p {
     font-family: cursive;
     text-align: center;
     margin: 0 40px;
+    margin-bottom: px;
 }
 
 p a {
@@ -51,9 +62,21 @@ p a {
 a.phone-link, a.email-link {
     color: blue;
     text-decoration: none;
+    margin-bottom: 50px;
 }
 
 a.phone-link:hover, a.email-link:hover {
     color: red;
     text-decoration: underline;
+}
+
+
+#about,
+#portfolio,
+#contact {
+    margin-top: 500px; 
+    margin-bottom: 20px; 
+}
+.nav-link {
+    cursor: pointer;
 }
