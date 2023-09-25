@@ -80,3 +80,14 @@ a.phone-link:hover, a.email-link:hover {
 .nav-link {
     cursor: pointer;
 }
+.nav-link:hover {
+   
+    transform: scale(1.1); /* Scale up the text on hover */
+    transition: transform 0.5s ease; /* Add a smooth transition effect */
+    background-color: #f0f0f0
+}
+#about-p,
+#portfolio-p,
+.contact-container {
+    display: none;
+}
