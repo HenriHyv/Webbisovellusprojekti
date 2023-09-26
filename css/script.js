@@ -10,9 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     }
-    document.getElementById("contact").addEventListener("click", function() {
-        toggleSectionVisibility("contact-container");
-    });
+  
     // Add click event listeners for each section
     document.getElementById("about").addEventListener("click", function() {
         toggleSectionVisibility("about-p");
@@ -21,7 +19,9 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("portfolio").addEventListener("click", function() {
         toggleSectionVisibility("portfolio-p");
     });
-
+    document.getElementById("Contact").addEventListener("click", function() {
+        toggleSectionVisibility("contact-container");
+    });
    
     });
 
