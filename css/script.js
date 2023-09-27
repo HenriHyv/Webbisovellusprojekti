@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Function to toggle visibility based on ID
+   
     function toggleSectionVisibility(sectionId) {
         var section = document.getElementById(sectionId);
         if (section) {
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
   
-    // Add click event listeners for each section
+    
     document.getElementById("about").addEventListener("click", function() {
         toggleSectionVisibility("about-p");
     });
