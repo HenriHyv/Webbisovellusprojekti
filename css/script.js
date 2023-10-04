@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
-   
+    
+    function showPopup() {
+        alert("This website is part of my Web application course. This is not professional work!");
+    }
+        setTimeout(showPopup, 1000);
     function toggleSectionVisibility(sectionId) {
         var section = document.getElementById(sectionId);
         if (section) {
@@ -9,8 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 section.style.display = "none";
             }
         }
+       
+        
     }
-  
+        
     
     document.getElementById("about").addEventListener("click", function() {
         toggleSectionVisibility("about-p");
@@ -25,4 +31,4 @@ document.addEventListener("DOMContentLoaded", function() {
    
     });
 
-
+      
