@@ -30,5 +30,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
    
     });
+function openPopup() {
+    document.getElementById('contact-popup').style.display = 'block';
+}
 
+function closePopup() {
+    document.getElementById('contact-popup').style.display = 'none';
+}
+
+// Open the popup when clicking the "Contact" link
+document.getElementById('Contact').addEventListener('click', openPopup);
       

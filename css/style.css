@@ -70,16 +70,7 @@ p a {
     
 }
 
-a.phone-link, a.email-link {
-    color: black;
-    text-decoration: none;
-    margin-bottom: 50px;
-}
 
-a.phone-link:hover, a.email-link:hover {
-    color: blue;
-    text-decoration: underline;
-}
 #Contact {
     margin-top: 300px; /* Adjust the value as needed */
 }
@@ -143,3 +134,42 @@ table {
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+  .footer-table {
+    width: 60%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the table horizontally on the page */
+    border-collapse: collapse; /* Optional: Collapsing table borders */
+  }
+  
+  /* Optional: Styling for table headers and table data cells */
+  .footer-table th, .footer-table td {
+    padding: 8px;
+    text-align: left;
+    border: none;
+  }
+  
+  /* Optional: Styling for table rows */
+  .footer-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Optional: Styling for email and phone links within the footer table */
+  .footer-table .email-link, .footer-table .phone-link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer-table .email-link:hover, .footer-table .phone-link:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  .hidden-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Add a smooth transition effect for opacity */
+}
+
+.show-content {
+    display: block;
+    opacity: 1;
+}
