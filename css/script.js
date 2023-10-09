@@ -16,12 +16,13 @@ document.addEventListener("DOMContentLoaded", function() {
        
         
     }
-        
-    
+
     document.getElementById("about").addEventListener("click", function() {
         toggleSectionVisibility("about-p");
     });
 
+   
+    
     document.getElementById("portfolio").addEventListener("click", function() {
         toggleSectionVisibility("portfolio-p");
     });
@@ -38,6 +39,5 @@ function closePopup() {
     document.getElementById('contact-popup').style.display = 'none';
 }
 
-// Open the popup when clicking the "Contact" link
-document.getElementById('Contact').addEventListener('click', openPopup);
-      
+
+
