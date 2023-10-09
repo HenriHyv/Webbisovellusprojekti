@@ -39,5 +39,3 @@ function closePopup() {
     document.getElementById('contact-popup').style.display = 'none';
 }
 
-
-

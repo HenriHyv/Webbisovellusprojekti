@@ -1,24 +1,47 @@
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("loadButton").addEventListener("click", function () {
-        console.log("Button clicked!");
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", "php/info.php", true);
+document.addEventListener('DOMContentLoaded', function() {
+    let isOldDataDisplayed = true; // Flag to track the current state
 
-        xhr.onload = function () {
-            if (xhr.status === 200) {
-                try {
-                    var data = JSON.parse(xhr.responseText);
-                    var contentDiv = document.getElementById("content");
-                    contentDiv.innerHTML = "<h2>" + data.name + "</h2><p>" + data.description + "</p>";
-                } catch (error) {
-                    console.error("Error parsing JSON:", error);
-                    console.log("Response Text:", xhr.responseText);
-                    console.log("Data:", data);
-                    console.log("Content Div:", contentDiv);
+    // vanha teksti takaisin
+    const oldText = `
+        Hello, my name is Henri, I'm currently a second-year computer science student from Oulu. <br> 
+        I'm orienting myself currently into software development, and I wish to specialize myself into web/back-end development.
+    `;
+
+    function fetchData() {
+        fetch('text/data.txt')
+            .then(response => response.text())
+            .then(data => {
+                if (isOldDataDisplayed) {
+                    // Display fetched data
+                    const lines = data.split('\n');
+                    const formattedData = {};
+
+                    // Parse the lines into key-value pairs
+                    lines.forEach(line => {
+                        const [key, value] = line.split(': ');
+                        if (key && value) {
+                            formattedData[key] = value;
+                        }
+                    });
+
+                    // Update the content of the 'about-p' paragraph with fetched data
+                    const aboutParagraph = document.getElementById('about-p');
+                    aboutParagraph.innerHTML = `<p>${formattedData['Name']}<br>${formattedData['Description']}</p>`;
+                } else {
+                    // Revert to old text
+                    const aboutParagraph = document.getElementById('about-p');
+                    aboutParagraph.innerHTML = oldText;
                 }
-            }
-        };
-        xhr.send(); // You were missing this line to actually send the request
-    });
 
+                // Toggle the flag to switch between old text and fetched data
+                isOldDataDisplayed = !isOldDataDisplayed;
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+    }
+
+    // Add an event listener to the button to trigger fetching data when clicked
+    document.getElementById('loadButton').addEventListener('click', fetchData);
 });
+
